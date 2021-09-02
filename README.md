@@ -12,19 +12,9 @@ Link your Piwik/Matomo installation. Compatible with vue 2.x and 3.x.
 ## Installation
 
 ```bash
-npm install --save vue-matomo
+npm install --save vue-matomo-new
 ```
 
-### Browser
-
-```html
-<!-- Include after Vue -->
-<!-- Local files -->
-<script src="vue-matomo/dist/vue-matomo.js"></script>
-
-<!-- From CDN -->
-<script src="https://unpkg.com/vue-matomo"></script>
-```
 
 ## Usage
 
@@ -32,7 +22,7 @@ npm install --save vue-matomo
 
 ```js
 import Vue from 'vue'
-import VueMatomo from 'vue-matomo'
+import VueMatomo from 'vue-matomo-new'
 
 Vue.use(VueMatomo, {
   // Configure your matomo server and site by providing
