@@ -1,11 +1,11 @@
 {
   "name": "vue-matomo",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Link your Piwik/Matomo installation",
-  "author": "Dennis Ruhe <dennis@amazingsystems.nl>",
+  "author": "zdz <zdzserver@163.com>",
   "license": "MIT",
   "main": "dist/vue-matomo.js",
-  "repository": "https://github.com/AmazingDreams/vue-matomo",
+  "repository": "https://github.com/zdz1715/vue-matomo.git",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },

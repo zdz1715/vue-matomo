@@ -18,5 +18,6 @@ export function loadScript (trackerScript) {
 }
 
 export function getResolvedHref (router, path) {
-  return router.resolve(path).href
+  // hash模式下也能正常追踪路由
+  return window.location.origin  + path
 }
