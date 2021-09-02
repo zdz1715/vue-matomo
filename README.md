@@ -1,13 +1,7 @@
-# VueMatomo
-
-[![npm](https://img.shields.io/npm/v/vue-matomo.svg)](https://www.npmjs.com/package/vue-matomo)
-[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
-[![vue3](https://img.shields.io/badge/vue-3.x-green.svg)](https://v3.vuejs.org/)
-[![npm](https://img.shields.io/npm/dw/vue-matomo.svg)](https://www.npmjs.com/package/vue-matomo)
-[![bundle-size](https://badgen.net/bundlephobia/min/vue-matomo)](https://bundlephobia.com/result?p=vue-matomo)
-[![license](https://img.shields.io/github/license/AmazingDreams/vue-matomo)](LICENSE)
+# VueMatomoNew
 
 Link your Piwik/Matomo installation. Compatible with vue 2.x and 3.x.
+- fix: router hash模式下单条路由追踪
 
 ## Installation
 
@@ -142,7 +136,7 @@ window._paq.push(['trackPageView'])
 
 #### Note on external link tracking
 
-When using the option to `trackExternalLinks`, `vue-matomo` ensures the corresponding Matomo method is called after each navigation event. Matomo scans the entire DOM for external links and adds its link handling. This means that if your external links are rendered dynamically these links may not be picked up. You need to call this method manually if links might not exist after the page has finished rendering (for example if the links come from some REST call). For more information refer to https://developer.matomo.org/guides/spa-tracking#link-tracking
+When using the option to `trackExternalLinks`, `vue-matomo-new` ensures the corresponding Matomo method is called after each navigation event. Matomo scans the entire DOM for external links and adds its link handling. This means that if your external links are rendered dynamically these links may not be picked up. You need to call this method manually if links might not exist after the page has finished rendering (for example if the links come from some REST call). For more information refer to https://developer.matomo.org/guides/spa-tracking#link-tracking
 
 ```js
 this.$matomo && this.$matomo.enableLinkTracking()
@@ -161,14 +155,14 @@ Nuxt can work by creating a plugin that will load VueMatomo with SSR disabled. N
 
 export default {
   plugins: [
-    { src: '~/plugins/vue-matomo.js', ssr: false }
+    { src: '~/plugins/vue-matomo-new.js', ssr: false }
   ]
 }
 
-// plugins/vue-matomo.js
+// plugins/vue-matomo-new.js
 
 import Vue from 'vue'
-import VueMatomo from 'vue-matomo'
+import VueMatomo from 'vue-matomo-new'
 
 export default ({ app }) => {
   Vue.use(VueMatomo, {
