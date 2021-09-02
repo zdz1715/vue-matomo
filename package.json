@@ -1,10 +1,10 @@
 {
   "name": "vue-matomo-new",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Link your Piwik/Matomo installation",
   "author": "zdz <zdzserver@163.com>",
   "license": "MIT",
-  "main": "dist/vue-matomo.js",
+  "main": "dist/vue-matomo-new.js",
   "repository": "https://github.com/zdz1715/vue-matomo.git",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
